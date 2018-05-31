@@ -1,0 +1,347 @@
+/*
+ *
+ * Author: Araceli Martin
+ * Author URL: http://aracelicmaritn.com
+ *
+ */
+
+@font-face {
+    font-family: Painting_With_Chocolate;
+    src: url(http://aracelicmartin.com/candeynacho/assets/Painting_With_Chocolate.ttf);
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body {
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    background: #3B3735;
+    color:#dee2e6;
+    font-weight: 400;
+}
+
+.map-box {
+    background-image: url(assets/img/loader.gif);
+    background-size: cover;
+    width:100%;
+    min-height: 190px;
+}
+
+a:hover { text-decoration: none; }
+
+.nav a.nav-item{
+    cursor: pointer;
+}
+
+.nav a.nav-item.disabled{
+    cursor: auto;
+    pointer-events: none;
+    color:#747474;
+}
+
+::-moz-selection { background: #e75967; color: #fff; text-shadow: none; }
+::selection { background: #e75967; color: #fff; text-shadow: none; }
+
+
+h2 {
+    color:#dee2e6;
+     font-size: 48px;
+    font-weight: 100;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    text-transform: uppercase;
+}
+
+.modal-content h6, .modal-body h4, .modal-body p {
+    color: #1b1918;
+    
+}
+
+.modal-content h6, .modal-body h4, {
+    font-size: 26px;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.modal-body p { 
+font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+/***** Coming Soon *****/
+
+.coming-soon {
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+}
+
+.coming-soon h1 {
+    font-size: 60px;
+    font-weight: 300;
+padding-top:35px;
+    text-transform: uppercase;
+    text-shadow: 0 1px 7px rgba(0,0,0,.2);
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.coming-soon p {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 36px;
+    text-shadow: 0 1px 7px rgba(0,0,0,.2);
+}
+
+button.btn.btn-dark{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 25px;
+}
+
+.timer {
+    margin-top: 60px;
+    text-shadow: 0 1px 5px rgba(0,0,0,.1);
+}
+
+.timer .days-wrapper,
+.timer .hours-wrapper,
+.timer .minutes-wrapper,
+.timer .seconds-wrapper {
+    display: inline-block;
+    margin: 0 10px;
+    font-family: 'Shadows Into Light', cursive;
+    padding-top: 15px;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.timer .days-wrapper:hover,
+.timer .hours-wrapper:hover,
+.timer .minutes-wrapper:hover,
+.timer .seconds-wrapper:hover {
+    text-shadow: none;
+}
+
+.timer .days,
+.timer .hours,
+.timer .minutes,
+.timer .seconds {
+    font-size: 130px;
+    line-height: 130px;
+    font-family: Painting_With_Chocolate;
+    color: #fff;
+}
+
+
+/***** Content *****/
+
+.subscribe h4 {
+    font-size: 32px;
+    font-weight: 400;
+    color: #4d4d4d;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-shadow: 1px 2px 1px #fff;
+}
+
+.subscribe p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+
+.subscribe form input, .subscribe form textarea {
+    width: 75%;
+    margin: 0;
+    padding: 0 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 56px;
+    color: #888;
+    border: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.15);
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.15);
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.15);
+}
+
+.subscribe form input:focus, 
+.subscribe form textarea:focus {
+    -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.15);
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.15);
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.15);
+}
+
+.subscribe form input:-moz-placeholder, 
+.subscribe form textarea:-moz-placeholder { 
+    color: #888; 
+}
+
+.subscribe form input:-ms-input-placeholder, 
+.subscribe form textarea:-ms-input-placeholder { 
+    color: #888; 
+}
+
+.subscribe form input::-webkit-input-placeholder, 
+.subscribe form textarea::-webkit-input-placeholder { 
+    color: #888; 
+}
+
+.success-message, .error-message {
+    font-size: 18px;
+}
+
+.error-message {
+    color: #e75967;
+}
+
+nav.nav {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 300;
+}
+a.nav-item.nav-link:hover {
+    background-color: #1b1918;
+    opacity: 0.5;
+
+}
+
+a.nav-item.nav-link {
+    background-color: #37322c7d;
+    height: 100px;
+    padding-top: 40px;
+
+}
+.nav-item .fa {
+    font-size: 32px !important;
+}
+.nav-item img {
+    width: 32px;
+}
+/***** Media Queries *****/
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+
+    .timer .days-wrapper,
+    .timer .hours-wrapper,
+    .timer .minutes-wrapper,
+    .timer .seconds-wrapper {
+        margin: 7px;
+        padding-top: 20px;
+    }
+
+    .timer .days,
+    .timer .hours,
+    .timer .minutes,
+    .timer .seconds {
+        font-size: 100px;
+        line-height: 100px;
+    }
+    h2 {
+        font-size: 70px;
+        padding-bottom: 25px;
+    }
+    
+    .modal-content h6, .modal-body h4, .modal-body p {
+        color: #1b1918;
+        
+    }
+
+
+}
+
+@media (max-width: 767px) {
+
+    .timer .days-wrapper,
+    .timer .hours-wrapper,
+    .timer .minutes-wrapper,
+    .timer .seconds-wrapper {
+        margin: 7px;
+        padding-top: 20px;
+    }
+
+    .timer .days,
+    .timer .hours,
+    .timer .minutes,
+    .timer .seconds {
+        font-size: 80px;
+        line-height: 80px;
+    }
+    
+    a.nav-item.nav-link {
+        background-color: #37322c7d;
+        height: 100px;
+        padding-top: 40px;
+
+    }
+
+    h2 {
+        font-size: 55px;
+        padding-bottom: 25px;
+    }
+    
+    .modal-content h6, .modal-body h4, .modal-body p {
+    color: #1b1918;
+    }
+
+}
+
+@media (max-width: 480px) {
+    
+    a.nav-item.nav-link {
+        height: 80px;
+        padding-top: 25px;
+
+    }
+
+    .nav-item .fa {
+        font-size: 32px !important;
+    }
+    
+    .nav-item img {
+        width: 32px;
+    }
+    
+    .coming-soon h1 {
+        font-size: 45px;
+    }
+    
+    .timer{
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    
+    .timer .days,
+    .timer .hours,
+    .timer .minutes,
+    .timer .seconds {
+        font-size: 72px;
+        line-height: 72px;
+    }
+    h2 {
+        padding-top: 0;
+        font-size: 35px;
+        padding-bottom: 8px;
+    }
+    
+    .modal-content h6, .modal-body h4, .modal-body p {
+        color: #1b1918;
+    }
+
+}
+
+/* STARS */
+
+
